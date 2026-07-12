@@ -89,10 +89,10 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-gradient-to-r from-slate-900/95 via-blue-900/95 to-slate-900/95 backdrop-blur-xl border-b border-cyan-500/10 md:bg-transparent md:border-none md:backdrop-blur-none">
       <div className="md:fixed md:top-4 md:left-1/2 md:transform md:-translate-x-1/2 w-full md:w-auto">
-        <div className="p-[2px] md:rounded-full bg-gradient-to-r from-green-800 via-purple-900 to-indigo-800 animate-gradient-x">
+        <div className="p-[2px] md:rounded-full bg-gradient-to-r from-blue-900 via-slate-600 to-indigo-600 animate-gradient-x">
           <nav
             ref={navRef}
-            className="relative bg-gradient-to-r from-slate-900/90 via-blue-900/90 to-slate-900/90 backdrop-blur-md md:rounded-full px-4 md:px-3 py-2.5 border border-cyan-500/10"
+            className="relative bg-gradient-to-r from-slate-900/90 via-slate-900/90 to-slate-900/90 backdrop-blur-md md:rounded-full px-4 md:px-3 py-2.5 border border-cyan-500/10"
           >
             {/* Mobile Menu Button */}
             <div className="flex justify-between items-center md:hidden px-2">
@@ -113,7 +113,7 @@ export default function Header() {
 
             {/* Desktop sliding pill background */}
             <div
-              className="hidden md:block absolute top-1/2 -translate-y-1/2 h-[calc(100%-10px)] rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 shadow-lg shadow-cyan-500/30 pointer-events-none"
+              className="hidden md:block absolute top-1/2 -translate-y-1/2 h-[calc(100%-10px)] rounded-full bg-gradient-to-r from-cyan-900 pointer-events-none"
               style={{
                 left: pillStyle.left,
                 width: pillStyle.width,
